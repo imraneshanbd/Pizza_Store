@@ -1,0 +1,24 @@
+# Pizza Shop Order
+# Don't Change the code below
+size = input("Witch size you want to buy? S or M or L! ")
+add_pepperoni = input("Would you like to add extra? Y or N !")
+extra_cheese = input("Would you like to add extra cheese? Y or N! ")
+bill = 0
+# Don't Change the code Above
+
+# your code is write here
+if size == "S":
+    bill += 15
+elif size == "M":
+    bill += 20
+else:
+    bill += 25
+
+if add_pepperoni == "Y":
+    if size == "S":
+        bill += 2
+    else:
+        bill += 3
+if extra_cheese == "y":
+    bill += 1
+print(f"your final  bill is ${bill}")
